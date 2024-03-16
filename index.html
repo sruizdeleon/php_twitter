@@ -81,7 +81,8 @@
         </form>
       </div>
       <!-- tweetbox ends -->
-
+<?php
+foreach ($twitts as $twitt){ ?>
       <!-- post starts -->
       <div class="post">
         <div class="post__avatar">
@@ -95,14 +96,14 @@
           <div class="post__header">
             <div class="post__headerText">
               <h3>
-                <?php echo $autor; ?>
+                <?php echo $twitt["autor"] ?>
                 <span class="post__headerSpecial"
-                  ><span class="material-icons post__badge"> verified </span><?php echo $usuario; ?></span
+                  ><span class="material-icons post__badge"> verified </span><?php echo $twitt["usuario"] ?></span
                 >
               </h3>
             </div>
             <div class="post__headerDescription">
-              <p><?php echo $texto; ?></p>
+              <p><?php echo $twitt["texto"] ?></p>
             </div>
           </div>
           <img
@@ -117,7 +118,7 @@
         </div>
       </div>
       <!-- post ends -->
-
+<?php } ?>
       <!-- post starts -->
       <div class="post">
         <div class="post__avatar">
