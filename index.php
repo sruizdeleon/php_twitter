@@ -1,6 +1,6 @@
 <?php
 
-    $texto = "En un lugar de la Mancha...";
+    /* $texto = "En un lugar de la Mancha...";
     $autor = "Miguel de Cervantes";
     $usuario = "@miguelito";
 
@@ -18,4 +18,10 @@
     ];
 
     
-    require_once "index.html";
+    require_once "index.html"; */
+
+    $datos = file_get_contents("twits.json");
+    $array_datos = json_decode($datos, true);
+
+
+    require_once"index.html";

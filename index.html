@@ -82,7 +82,7 @@
       </div>
       <!-- tweetbox ends -->
 <?php
-foreach ($twitts as $twitt){ ?>
+foreach ($array_datos['tweets'] as $twitt){ ?>
       <!-- post starts -->
       <div class="post">
         <div class="post__avatar">
@@ -98,7 +98,7 @@ foreach ($twitts as $twitt){ ?>
               <h3>
                 <?php echo $twitt["autor"] ?>
                 <span class="post__headerSpecial"
-                  ><span class="material-icons post__badge"> verified </span><?php echo $twitt["usuario"] ?></span
+                  ><span class="material-icons post__badge"> verified </span><?php echo $twitt["username"] ?></span
                 >
               </h3>
             </div>
